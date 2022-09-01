@@ -1,0 +1,33 @@
+<html>
+
+<head>
+<link rel="icon" href="paratools-browser-icon.png" type="image/x-icon" />
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+<div style="padding: 10px; background: #fff">
+    <table>
+        <tr>
+            <th align="left"></th>
+            <th align="left">Title</th>
+            <th align="left">Created At</th>
+            <th align="center">First Touch</th>
+            <th align="center">Time to Close</th>
+        </tr>
+        {{range .Tickets}}
+        <tr>
+            <td align="center">{{.State}}</td>
+            <td><a href="{{.URL}}">{{.Title}}</a></td>
+            <td>{{.CreatedAt}}</td>
+            <td align="center">{{.TimeToFirstTouch}}</td>
+            <td align="center">{{.TimeToClose}}</td>
+        </tr>
+        {{end}}
+    </table>
+</div>
+
+</body>
+
+</html>

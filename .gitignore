@@ -1,0 +1,7 @@
+.DS_Store
+*.secret
+update-issues
+go.mod
+go.sum
+nohup.out
+index.html
